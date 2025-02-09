@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Name Identifier</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="title-box">
+            <h1 class="title">Place Name Identifier</h1>
+        </div>
+        <div class="welcome">
+            <p>Welcome to the Place Name Identifier app. This app helps you identify place names from your sentences with high accuracy. Simply enter a sentence in the box below and click "Identify Places" to get started.</p>
+        </div>
+        <form action="/identify" method="post" enctype="multipart/form-data">
+            <label for="file-upload" class="custom-file-upload">
+                <span class="choose-file-icon">▲</span> Upload Document
+            </label>
+            <input id="file-upload" type="file" name="file" style="display:none;">
+            <input type="text" name="sentence" class="sentence-input" placeholder="Enter a sentence...">
+            <button type="submit" class="identify-button">Identify Places</button>
+        </form>
+    </div>
+</body>
+</html>
+
+
+
+
+
+

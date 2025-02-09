@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Name Identifier - Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="title-box">
+            <h1 class="title">Place Name Identifier - Results</h1>
+        </div>
+        <div class="input-sentence">
+            <h2 class="side-heading">Entered Sentence:</h2>
+            <p class="highlighted-sentence">{{ highlighted_sentence }}</p>
+        </div>
+        <div class="result">
+            <h2 class="side-heading">Identified Places:</h2>
+            <ul>
+                {% for place in identified_places %}
+                    <li class="result-item">
+                        <strong class="highlighted-place">{{ place['Token'] }}</strong> - Canonical Name: {{ place['Canonical name'] }}, Score: {{ place['Score'] }}
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

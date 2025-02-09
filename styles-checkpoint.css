@@ -1,0 +1,116 @@
+/* Add the following styles to the existing CSS */
+
+/* Title Box */
+.title-box {
+    background-color: #007bff;
+    padding: 10px;
+    margin-bottom: 20px;
+    transform: skew(-20deg);
+    display: inline-block;
+}
+
+.title {
+    font-family: 'Arial Black', sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+/* Welcome Message */
+.welcome {
+    margin-bottom: 20px;
+}
+
+/* Sentence Input and Button */
+.sentence-input, .identify-button {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.identify-button {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Highlighted Sentence */
+.highlighted-sentence {
+    margin-bottom: 20px;
+}
+
+.sentence-text {
+    font-weight: bold;
+}
+
+.highlight-green {
+    background-color: #baf0a7;
+}
+
+.color-bar {
+    margin-top: 10px;
+}
+
+.green-bar {
+    display: inline-block;
+    width: 20px;
+    height: 10px;
+    background-color: #baf0a7;
+    margin-right: 5px;
+}
+
+.red-bar {
+    display: inline-block;
+    width: 20px;
+    height: 10px;
+    background-color: #f0a7a7;
+    margin-right: 5px;
+}
+/* Custom styles for the file upload button */
+.custom-file-upload {
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+}
+
+/* Styling for the file input */
+#file-upload {
+    display: none;
+}
+
+/* Styling for the arrow icon */
+.choose-file-icon {
+    margin-right: 5px;
+    font-size: 14px;
+}
+/* Custom styles for the file upload button */
+.custom-file-upload {
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+}
+
+/* Styling for the file input */
+#file-upload {
+    display: none;
+}
+
+/* Styling for the arrow icon */
+.choose-file-icon {
+    margin-right: 5px;
+    font-size: 14px;
+}
